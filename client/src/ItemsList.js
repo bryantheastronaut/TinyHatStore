@@ -23,7 +23,7 @@ export const ItemsList = props => {
       title={item.title}
       imgUrl={item.imgUrl}
       description={item.description}
-      slug={item.slug}/>
+      slug={item.slug} />
   ));
   return (
     <ItemsContainer>
