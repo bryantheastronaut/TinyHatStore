@@ -27,7 +27,7 @@ export const ItemsList = props => {
   ));
   return (
     <ItemsContainer>
-      {items} yay
+      {items}
     </ItemsContainer>
   );
 };
