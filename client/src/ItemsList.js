@@ -1,4 +1,6 @@
 import React from 'react';
+import {Item} from './Item';
+import {browserHistory} from 'react-router';
 import styled from 'styled-components';
 
 const ItemsContainer = styled.div`
@@ -14,10 +16,36 @@ const ItemsContainer = styled.div`
   margin: 40px auto;
 `;
 
-export const ItemsList = props => (
-  <ItemsContainer>
-    <div>Item</div>
-    <div>Item</div>
-    <div>Item</div>
-  </ItemsContainer>
-)
+export const ItemsList = props => {
+  const items = props.items.map((item, idx) => (
+    <Item
+      key={idx}
+      title={item.title}
+      imgUrl={item.imgUrl}
+      description={item.description}
+      slug={item.slug}/>
+  ));
+  return (
+    <ItemsContainer>
+      {items}
+    </ItemsContainer>
+  );
+};
+
+// export default class ItemsList extends Component {
+//
+//   render() {
+//     const items = props.items.map((item, idx) => (
+//       <Item
+//         key={idx}
+//         title={item.title}
+//         imgUrl={item.imgUrl}
+//         description={item.description}/>
+//     ))
+//     return (
+//       <ItemsContainer>
+//         {items}
+//       </ItemsContainer>
+//     );
+//   }
+// }
