@@ -11,8 +11,11 @@ const StyledFooter = styled.div`
   width: 100vw;
   padding: 10px;
   background-color: palevioletred;
+  color: white;
+  font-size: 1.25em;
+
 `;
 
 export const Footer = props => (
-  <StyledFooter>footer</StyledFooter>
+  <StyledFooter>&copy;2017 TinyHatsStore, Inc.</StyledFooter>
 )

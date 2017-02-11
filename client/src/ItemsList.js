@@ -1,5 +1,5 @@
 import React from 'react';
-import {Item} from './Item';
+import {ItemPreview} from './ItemPreview';
 import {browserHistory} from 'react-router';
 import styled from 'styled-components';
 
@@ -18,7 +18,7 @@ const ItemsContainer = styled.div`
 
 export const ItemsList = props => {
   const items = props.items.map((item, idx) => (
-    <Item
+    <ItemPreview
       key={idx}
       title={item.title}
       imgUrl={item.imgUrl}

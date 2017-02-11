@@ -15,7 +15,7 @@ const SingleItem = styled.div`
   max-height: 300px;
 `;
 
-export const Item = props => (
+export const ItemPreview = props => (
   <SingleItem onClick={() => browserHistory.push(`/items/${props.slug}`)}>
     <h2>{props.title}</h2>
     <img src={props.imgUrl} alt={props.title} style={{width: 150}}/>

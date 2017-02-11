@@ -26,10 +26,10 @@ const StyledLink = styled(Link)`
 
 export const Header = props => (
   <Title>
-    <h2 style={{paddingLeft: 10}}>
-      <i style={{color: 'white', margin: 5}} className='fa fa-chevron-up'></i>
-        Tiny Hat Store
-      <i style={{color: 'white', margin: 5}} className='fa fa-chevron-up'></i>
+    <h2 style={{paddingLeft: 10, marginTop: 30}}>
+      <i style={{color: 'lightblue', position: 'relative', left: 25, top: -20}} className='fa fa-chevron-up'></i>
+        <span style={{color: 'white'}}>Tiny<span style={{color: '#555'}}>Hat</span>Store</span>
+      <i style={{color: 'lightblue', position: 'relative', left: -25, top: -20}} className='fa fa-chevron-up'></i>
     </h2>
     <SubMenu>
       <h2>

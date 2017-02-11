@@ -4,12 +4,14 @@ import {Router, Route, IndexRoute, browserHistory} from 'react-router';
 import App from './App';
 import {About} from './About';
 import {ItemsList} from './ItemsList';
+import {SingleItemView} from './SingleItemView';
 
 ReactDOM.render(
   <Router history={browserHistory}>
     <Route path='/' component={App}>
       <IndexRoute component={About} />
       <Route path='/items' component={ItemsList} />
+      <Route path='/items/:slug' component={SingleItemView} />
     </Route>
   </Router>,
   document.getElementById('root')

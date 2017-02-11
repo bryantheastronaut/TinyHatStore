@@ -16,5 +16,7 @@ const Dialog = styled.div`
 export const About = props => (
   <Dialog>
     <h1>Tiny hats! How about that!</h1>
+    <img style={{maxHeight: '80%'}} src='https://cdn0.vox-cdn.com/thumbor/ruLJMC3s9KZ3j2TWhyQWydSIskA=/0x453:1061x1050/1600x900/cdn0.vox-cdn.com/uploads/chorus_image/image/47723111/81jtNhsOgfL._SL1500_.0.0.jpg' />
+    <p>Be fly.</p>
   </Dialog>
 )
