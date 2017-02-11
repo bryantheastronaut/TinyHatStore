@@ -13,7 +13,6 @@ const StyledFooter = styled.div`
   background-color: palevioletred;
   color: white;
   font-size: 1.25em;
-
 `;
 
 export const Footer = props => (
