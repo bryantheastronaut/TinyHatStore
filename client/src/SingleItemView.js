@@ -9,7 +9,7 @@ const Item = styled.div`
   width: 50vw;
   height: 75vh;
   margin: 3vh auto;
-  box-shadow: 1px 1px 1px #999;
+  box-shadow: 1px 1px 1px #333;
   border-radius: 10px;
   padding: 20px;
   text-align: center;

@@ -14,8 +14,8 @@ const Title = styled.div`
 const SubMenu = styled.div`
   display: flex;
   justify-content: space-around;
-  flex-flow: row wrap;
-  width: 20vw;
+  flex-flow: row nowrap;
+  width: 25vw;
 `;
 
 const StyledLink = styled(Link)`
@@ -44,6 +44,12 @@ export const Header = props => (
           to='/items'
           activeStyle={{color: 'black'}}
         >View Items</StyledLink>
+      </h2>
+      <h2>
+        <StyledLink
+          to='/login'
+          activeStyle={{color: 'black'}}
+        >Log in</StyledLink>
       </h2>
     </SubMenu>
   </Title>

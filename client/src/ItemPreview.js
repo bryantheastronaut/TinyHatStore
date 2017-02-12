@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const SingleItem = styled.div`
   width: 30%;
   border-radius: 5px;
-  border: 1px solid #AAA;
+  border: 1px solid #333;
   background-color: #fff;
   padding: 5px;
   display: flex;

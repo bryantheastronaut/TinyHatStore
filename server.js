@@ -14,6 +14,7 @@ const router = express.Router();
 const PORT = process.env.PORT || 8181;
 
 // connect to the mongo db
+// replace URL with your DB instance + username/password
 mongoose.connect(`mongodb://tinyhatstore:suchlittlehats@ds019836.mlab.com:19836/bryandb`);
 
 app.use(logger('dev'));

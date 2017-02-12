@@ -31,21 +31,3 @@ export const ItemsList = props => {
     </ItemsContainer>
   );
 };
-
-// export default class ItemsList extends Component {
-//
-//   render() {
-//     const items = props.items.map((item, idx) => (
-//       <Item
-//         key={idx}
-//         title={item.title}
-//         imgUrl={item.imgUrl}
-//         description={item.description}/>
-//     ))
-//     return (
-//       <ItemsContainer>
-//         {items}
-//       </ItemsContainer>
-//     );
-//   }
-// }
